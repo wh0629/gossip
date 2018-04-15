@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>太极八卦图</title>
+		<style type="text/css">
+			.gossip{
+				position: relative;
+				width: 200px;
+				height: 200px;
+				border: 1px solid #111;
+				border-radius: 50%;
+				background: linear-gradient(to bottom,#fff 0%,#fff 50%,#000 50%,#000 100%); 
+				
+			}
+			.gossip:before{
+				content: '';
+				width: 20px;
+				height: 20px;
+				background: #fff;
+				border:40px solid #000;
+				border-radius: 50%;
+				position: absolute;
+				top: 25%;
+			}
+			.gossip:after{
+				content: '';
+				width: 20px;
+				height: 20px;
+				background: #000;
+				border:40px solid #fff;
+				border-radius: 50%;
+				position: absolute;
+				top: 25%;
+				left: 50%;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="gossip"></div>
+	</body>
+</html>
